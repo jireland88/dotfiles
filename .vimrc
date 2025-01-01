@@ -44,3 +44,5 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 " ... NERDTree
 nmap <C-e> :NERDTreeToggle<CR>
+" ... Copy to system clipboard on Wayland
+nmap <C-@> :call system("wl-copy", @")<CR>
