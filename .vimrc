@@ -7,6 +7,7 @@ set number " Shows the line numbers
 set title " Show file title
 syntax on
 set ttyfast " Speed up scrolling
+set spelllang=en_gb spell " Setup spell check
 
 let g:kite_supported_languages = ['python']
 
