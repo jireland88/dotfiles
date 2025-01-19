@@ -15,7 +15,7 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 # Recommends: foot
-set $term foot
+set $term ghostty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -49,6 +49,11 @@ output HDMI-A-1 bg ~/wallpapers/bulbul_portrait.avif stretch
 
 # GAPS CONFIG
 gaps inner 10
+
+# KEYBOARD CONFIG
+input * {
+	xkb_layout "gb"
+} 
 
 ### Idle configuration
 #
