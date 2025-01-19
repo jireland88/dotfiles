@@ -9,11 +9,9 @@ syntax on
 set ttyfast " Speed up scrolling
 set spelllang=en_gb spell " Setup spell check
 
-let g:kite_supported_languages = ['python']
-
 call plug#begin('~/.vim/plugged')
 " Colour Scheme
-Plug 'cocopon/iceberg.vim'
+Plug 'NLKNguyen/papercolor-theme'
 " Information bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -36,6 +34,12 @@ let g:slime_target = "vimterminal"
 
 " JEDI Vim Configuration
 let g:jedi#use_splits_not_buffers = "bottom"
+
+" Colour Scheme Config
+set t_Co=256
+set background=light
+colorscheme PaperColor
+let g:airline_theme="light"
 
 " Custom bindings
 " ... Split Naviation
